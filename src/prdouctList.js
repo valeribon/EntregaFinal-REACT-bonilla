@@ -1,0 +1,78 @@
+export let products = [
+  {
+    id: 1,
+    title: "Cable Textil Azul",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "electronics",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1687954544/cable-celeste-cubierta-textil-1_ll3uaf.png",
+  },
+
+  {
+    id: 2,
+    title: "Cable Textil Verde Pastel",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "electronics",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1687954544/cable-Green-Pastel-cubierta-textil-1_sxi3kw.png",
+  },
+
+  {
+    id: 3,
+    title: "Cable Textil Azul",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "electronics",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1687954542/cable-Blue-cubierta-textil-1_rn4ovb.png",
+  },
+
+  {
+    id: 4,
+    title: "Cable Textil Verde Fluor",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "electronics",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1687954543/cable-Fluor-cubierta-textil-1_skx4q5.png",
+  },
+
+  {
+    id: 5,
+    title: "Lampara LED",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "iluminacion",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1689205558/lamp1_dewpsi.jpg",
+  },
+  {
+    id: 6,
+    title: "Lampara LED Diseño 2",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "iluminacion",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1689205558/lamp3_rupj7t.jpg",
+  },
+  {
+    id: 7,
+    title: "Lampara LED Diseño 3",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "iluminacion",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1689205557/lamp2_a96kem.webp",
+  },
+  {
+    id: 8,
+    title: "Arduino R3",
+    price: 200,
+    stock: 4,
+    description: "Estas son las mejores",
+    category: "electronics",
+    img: "https://res.cloudinary.com/dprdeplon/image/upload/v1689205557/Arduino_Uno_-_R3_j0nryz.jpg",
+  },
+];

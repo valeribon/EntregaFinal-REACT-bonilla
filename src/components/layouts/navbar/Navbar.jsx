@@ -76,20 +76,34 @@ const Navbar = () => {
             </IconButton>
           </Link>
           <Stack direction="row" spacing={2} flexGrow={1}>
-            <Typography variant="h6" textAlign="center" color="inherit">
-              <Link to="/">Electronicas</Link>
+            <Typography variant="h6" textAlign="center">
+              <Link
+                to="/"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+              >
+                Electronicas
+              </Link>
             </Typography>
-            <Link to="/category/iluminacion">
+            <Link
+              to="/category/iluminacion"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
               <Button variant="elevated" color="primary">
                 Iluminacion
               </Button>
             </Link>
-            <Link to="/category/electronics">
+            <Link
+              to="/category/electronics"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
               <Button variant="elevated" color="primary">
                 Electronics
               </Button>
             </Link>
-            <Link to="/about">
+            <Link
+              to="/about"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
               <Button variant="elevated" color="primary">
                 About
               </Button>

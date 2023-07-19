@@ -1,5 +1,5 @@
 // import Grid from "@mui/material/Grid";
-import { Box, CardMedia, Paper, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";

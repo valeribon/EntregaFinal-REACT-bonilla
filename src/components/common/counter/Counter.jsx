@@ -4,27 +4,45 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 
 const Counter = ({ contador, sumar, restar, onAdd }) => {
   return (
-    <div style={{ border: "2px solid steelblue", width: "390px" }}>
-      <Grid xs={2} sx={{ display: "flex" }}>
-        <Button variant="outlined" onClick={restar}>
+    <div style={{ width: "400px" }}>
+      <Grid sx={{ display: "flex" }}>
+        <Button variant="text" onClick={restar}>
           <RemoveCircleIcon />
         </Button>
         <Paper
+          elevation={1}
           sx={{
-            width: "50px",
-            alignItems: "center",
-            justifyContent: "center",
+            width: "auto",
+            p: 2,
+            alignSelf: "center",
+            // justifyContent: "center",
           }}
         >
-          <Typography variant="h6" color="initial" align="center">
+          <Typography
+            variant="h6"
+            color="initial"
+            // align="center"
+            align-items="center"
+            sx={{ display: "flex" }}
+          >
             {contador}
           </Typography>
         </Paper>
-        <Button variant="outlined" onClick={sumar}>
+        <Button variant="text" onClick={sumar}>
           <AddCircleIcon />
         </Button>
 
-        <Button variant="contained" onClick={() => onAdd(contador)}>
+        <Button
+          variant="contained"
+          style={{ fontSize: "12px" }}
+          // sx={{
+          //   maxWidth: "100px",
+          //   maxHeight: "50px",
+          //   minWidth: "50px",
+          //   minHeight: "50px",
+          // }}
+          onClick={() => onAdd(contador)}
+        >
           Agregar al carrito
         </Button>
       </Grid>

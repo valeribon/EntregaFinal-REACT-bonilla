@@ -1,11 +1,33 @@
+import { Button, Grid, Paper, Typography } from "@mui/material";
+import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+
 const Counter = ({ contador, sumar, restar, onAdd }) => {
   return (
-    <div style={{ border: "2px solid steelblue", padding: "40px" }}>
-      <button onClick={sumar}>sumar</button>
-      <h3>{contador}</h3>
-      <button onClick={restar}>restar</button>
+    <div style={{ border: "2px solid steelblue", width: "390px" }}>
+      <Grid xs={2} sx={{ display: "flex" }}>
+        <Button variant="outlined" onClick={restar}>
+          <RemoveCircleIcon />
+        </Button>
+        <Paper
+          sx={{
+            width: "50px",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Typography variant="h6" color="initial" align="center">
+            {contador}
+          </Typography>
+        </Paper>
+        <Button variant="outlined" onClick={sumar}>
+          <AddCircleIcon />
+        </Button>
 
-      <button onClick={() => onAdd(contador)}>Agregar al carrito</button>
+        <Button variant="contained" onClick={() => onAdd(contador)}>
+          Agregar al carrito
+        </Button>
+      </Grid>
     </div>
   );
 };

@@ -49,7 +49,9 @@ const Footer = () => {
           </Grid>
           <Grid flexGrow={1} sx={{}}>
             <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-              <InstagramIcon />
+              <a href="https://www.instagram.com/uymedia_global" target="blank">
+                <InstagramIcon />
+              </a>
               <TwitterIcon />
               <FacebookIcon />
               <YouTubeIcon />

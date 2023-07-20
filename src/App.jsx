@@ -4,6 +4,7 @@ import CartContainer from "./components/pages/cart/CartContainer";
 import AboutContainer from "./components/pages/about/AboutContainer";
 import Layout from "./components/layouts/Layout";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
+import CheckoutContainer from "./components/pages/checkout/CheckoutContainer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
           <Route path="/about" element={<AboutContainer />} />
           <Route path="/cart" element={<CartContainer />} />
+          <Route path="/checkout" element={<CheckoutContainer />} />
         </Route>
         <Route path="/*" element={<h1>404 not found</h1>} />
       </Routes>

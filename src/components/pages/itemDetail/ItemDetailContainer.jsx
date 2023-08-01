@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { products } from "../../../prdouctList";
 import { useParams, useNavigate } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
+
+  const { addToCart } = useContext(CartContext);
 
   const { id } = useParams();
   console.log(id);
@@ -20,8 +23,10 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   const onAdd = (cantidad) => {
-    console.log(producto);
-    console.log(cantidad);
+    let productCart = { ...producto, quantity: cantidad };
+    addToCart(productCart);
+    // console.log(producto);
+    // console.log(cantidad);
     navigate("/cart");
   };
 

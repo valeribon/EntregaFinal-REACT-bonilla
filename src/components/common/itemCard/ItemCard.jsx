@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const ItemCard = ({ elemento }) => {
   return (
     <>
-      <Card key={elemento.id} sx={{ width: "300px" }}>
+      <Card key={elemento.id} sx={{ width: "300px", margin: 2 }}>
         <CardActionArea>
           <CardMedia
             component="img"

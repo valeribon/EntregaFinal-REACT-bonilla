@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { products } from "../../../prdouctList";
 import { useParams } from "react-router-dom";
+import { Skeleton, Stack } from "@mui/material";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -15,7 +16,9 @@ const ItemListContainer = () => {
       (elemento) => elemento.category === categoryName
     );
     const tarea = new Promise((resolve, reject) => {
-      resolve(categoryName === undefined ? products : productFiltered);
+      setTimeout(() => {
+        resolve(categoryName === undefined ? products : productFiltered);
+      }, 2000);
     });
 
     tarea
@@ -23,7 +26,15 @@ const ItemListContainer = () => {
       .catch((error) => setError(error));
   }, [categoryName]);
 
-  return <ItemList items={items} />;
+  // if(items.length === 0){
+  //   return <h1>Cargando...</h1>
+  // }
+
+  return (
+    <>
+      <ItemList items={items} />
+    </>
+  );
 };
 
 export default ItemListContainer;

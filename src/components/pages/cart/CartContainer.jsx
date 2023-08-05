@@ -19,7 +19,7 @@ const CartContainer = () => {
           </div>
         );
       })}
-      <Button onClick={clearCart}>Limpiar carrito</Button>
+      {cart.length > 0 && <Button onClick={clearCart}>Limpiar carrito</Button>}
     </div>
   );
 };

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { products } from "../../../prdouctList";
 import { useParams } from "react-router-dom";
-import { Skeleton, Stack } from "@mui/material";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -18,7 +17,7 @@ const ItemListContainer = () => {
     const tarea = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(categoryName === undefined ? products : productFiltered);
-      }, 2000);
+      }, 1000);
     });
 
     tarea

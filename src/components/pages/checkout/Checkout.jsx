@@ -67,7 +67,13 @@ const Checkout = () => {
               name="apellido"
               onChange={handleChange}
             />
-            <Button type="submit">Enviar</Button>
+            <input
+              type="text"
+              placeholder="Direccion de envio"
+              name="direccion"
+              onChange={handleChange}
+            />
+            <Button type="submit">Comprar</Button>
           </form>
         </Box>
       </Box>
